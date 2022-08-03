@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(25, 161, 173);
+    background-image: url("images/bg-pattern-top.svg"),
+        url("images/bg-pattern-bottom.svg");
+    background-position: bottom 30rem left -27rem, top 24rem right -27rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 42rem;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-position: bottom 15rem left -16rem, top 23rem right -13rem;
+        background-size: 62rem;
+    }
+}
+
+
+
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    height: 400px;
+    width: 380px;
+    background-color: #fff;
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.vic-img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.info {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    margin: 70px 100px 10px 100px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+h3 span {
+    font-weight: 200;
+    padding: 5px;
+    color: var(--darkGrayishBlue);
+}
+
+p {
+    position: relative;
+    color: var(--darkGrayishBlue);
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .1px;
+    width: 100%;
+    background-color: rgb(229, 219, 219);
+    border: transparent;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+li {
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+li span {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--darkCyan);
+}
+/*
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*/
