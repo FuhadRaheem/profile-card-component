@@ -83,6 +83,7 @@ main {
 h1 {
     margin: 70px 100px 10px 100px;
     color: var(--veryDarkDesaturatedBlue);
+    font-size: 23px;
 }
 
 h1 span {
