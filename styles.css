@@ -80,12 +80,12 @@ main {
     width: 100%;
 }
 
-h3 {
+h1 {
     margin: 70px 100px 10px 100px;
     color: var(--veryDarkDesaturatedBlue);
 }
 
-h3 span {
+h1 span {
     font-weight: 200;
     padding: 5px;
     color: var(--darkGrayishBlue);
